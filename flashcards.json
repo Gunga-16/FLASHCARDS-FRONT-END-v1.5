@@ -11,7 +11,8 @@
         "Subcategoria": "Fundamentos",
         "Pergunta": "Qual é a sintaxe correta para declarar uma variável em JavaScript?",
         "Resposta": "Para declarar uma variável, usamos \"\"let\"\", \"\"const\"\" ou \"\"var\"\".",
-        "Exemplo": "let nome = \"\"Ana\"\"; const idade = 25; var cidade = \"\"São Paulo\"\";"
+        "Exemplo": "let nome = \"\"Ana\"\"; 
+                    const idade = 25; var cidade = \"\"São Paulo\"\";"
     },
     {
         "Categoria": "JavaScript",
