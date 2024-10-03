@@ -4,15 +4,14 @@
         "Subcategoria": "Fundamentos",
         "Pergunta": "O que é JavaScript?",
         "Resposta": "JavaScript é uma linguagem de programação usada para criar comportamentos dinâmicos em páginas web.",
-        "Exemplo": "<script>let mensagem = \"\"Olá, Mundo!\"\"; console.log(mensagem);</script>"
+        "Exemplo": "let mensagem = \"\"Olá, Mundo!\"\"; console.log(mensagem);"
     },
     {
         "Categoria": "JavaScript",
         "Subcategoria": "Fundamentos",
         "Pergunta": "Qual é a sintaxe correta para declarar uma variável em JavaScript?",
         "Resposta": "Para declarar uma variável, usamos \"\"let\"\", \"\"const\"\" ou \"\"var\"\".",
-        "Exemplo": "let nome = \"\"Ana\"\"; 
-                    const idade = 25; var cidade = \"\"São Paulo\"\";"
+        "Exemplo": "let nome = \"\"Ana\"\"; const idade = 25; var cidade = \"\"São Paulo\"\";"
     },
     {
         "Categoria": "JavaScript",
