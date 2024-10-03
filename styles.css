@@ -110,3 +110,8 @@ footer {
     font-family: "Arimo", sans-serif;
 }
 
+.exemplo-cartao {
+    background-color: white;
+    color: black;
+    font-size: 1vw;
+}

@@ -14,6 +14,9 @@ function criaCartao(categoria, subcategoria, pergunta, resposta) {
             <div class="resposta-cartao">
                 <p>${resposta}</p>
             </div>
+            <div class="exemplo-cartao">
+                <pre><code>${exemplo}</code></pre>
+            </div>
         </div>
     `;
 
