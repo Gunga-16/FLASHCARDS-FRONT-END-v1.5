@@ -36,7 +36,7 @@ function carregarFlashcards() {
         .then(response => response.json())
         .then(flashcards => {
             flashcards.forEach(flashcard => {
-                let { Categoria, Subcategoria, Pergunta, Exemplo } = flashcard;
+                let { Categoria, Subcategoria, Pergunta, Resposta, Exemplo } = flashcard;
                 criaCartao(Categoria, Subcategoria, Pergunta, Resposta, Exemplo);
             });
         })
