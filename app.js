@@ -1,7 +1,7 @@
 console.log('Olá mundo');
 
 // Função para criar um cartão dinâmico com base nos dados do flashcards.json
-function criaCartao(categoria, subcategoria, pergunta, resposta) {
+function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
     let container = document.getElementById('container');
     let cartao = document.createElement('article');
     cartao.className = 'cartao';
