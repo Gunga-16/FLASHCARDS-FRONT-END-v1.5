@@ -113,7 +113,6 @@ footer {
 .exemplo-cartao {
     background-color: white;
     color: black;
-    font-size: 0.8vw;
-    width: 50%;
-    height: 80%;
+    font-size: 0.5vw;
+    width: 100%;
 }
