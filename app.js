@@ -37,7 +37,7 @@ function carregarFlashcards() {
         .then(flashcards => {
             flashcards.forEach(flashcard => {
                 let { Categoria, Subcategoria, Pergunta, Exemplo } = flashcard;
-                criaCartao(Categoria, Subcategoria, Pergunta, Exemplo);
+                criaCartao(Categoria, Subcategoria, Pergunta, Resposta, Exemplo);
             });
         })
         .catch(error => console.error('Erro ao carregar os flashcards:', error));
