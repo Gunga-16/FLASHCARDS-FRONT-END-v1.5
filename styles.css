@@ -48,7 +48,7 @@ body {
 
 .cartao {
     margin: 1rem;
-    height: 20rem;
+    height: 22rem;
     flex-grow: 1;
     flex-basis: calc(33% - 3rem);
 }
@@ -119,6 +119,8 @@ footer {
 .botao-copiar {
     color: white;
     background-color: black;
-    padding: 2px;
-    margin: 0 5px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 0;
 }
