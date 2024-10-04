@@ -60,3 +60,4 @@ async function clipboardCopy() {
   let text = document.querySelector("#codigo-exemplo").value;
   await navigator.clipboard.writeText(text);
 }
+
