@@ -16,8 +16,8 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
 
                 <div class="exemplo-cartao">
                     <p>
-                    <code id="exemplo-cartao">${exemplo}</code>
-                    <button id="execCopy">Copiar</button>
+                    <code id="codigo-exemplo">${exemplo}</code>
+                    <button id="clipboardCopy">Copiar</button>
                     </p>
                 </div>
             </div>
@@ -53,11 +53,10 @@ function carregarFlashcards() {
 // Chama a função para carregar e exibir os flashcards
 carregarFlashcards();
 
+// Type 2
+document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
 
-document.getElementById('execCopy').addEventListener('click', execCopy);
-
-// Função de copiar
-function execCopy() {
-  document.querySelector("#exemplo-cartao").select();
-  document.execCommand("copy");
+async function clipboardCopy() {
+  let text = document.querySelector("#codigo-exemplo").value;
+  await navigator.clipboard.writeText(text);
 }
