@@ -16,7 +16,9 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
 
                 <div class="exemplo-cartao">
                     <p>
-                    Exemplo:<br />
+                    Exemplo:
+                    <br>
+                    <br>
                     <code id="codigo-exemplo">
                     ${exemplo}
                     </code>
