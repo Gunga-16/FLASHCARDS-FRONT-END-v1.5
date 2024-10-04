@@ -116,3 +116,9 @@ footer {
     margin: 15px;
 }
 
+.botao-copiar {
+    color: white;
+    background-color: black;
+    padding: 2px;
+    margin: 0 5px;
+}
