@@ -96,9 +96,6 @@ body {
 
 }
 
-
-
-
 footer {
     background-color: var(--cor-fundo-footer);
     color: var(--cor-texto-footer);
@@ -117,4 +114,9 @@ footer {
     margin: 14px;
     height: 20%;
     border-radius: 20px;
+}
+
+textarea {
+    border: 0;
+    resize: 0;
 }
