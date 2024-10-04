@@ -15,7 +15,7 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
                 <p>${resposta}</p>
 
                 <div class="exemplo-cartao">
-                    <textarea readonly rowa='10' cols='40'>
+                    <textarea>
                     ${exemplo}
                     </textarea>
                 </div>
