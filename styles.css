@@ -23,6 +23,7 @@
 
 body {
     background-color: var(--cor-de-fundo);
+    font-family: "Arimo", sans-serif;
 }
 
 #container {
@@ -40,7 +41,6 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
-    font-family: "Bree", serif;
     font-weight: 700;
     border-radius: 10px;
 
@@ -104,7 +104,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    font-family: "Arimo", sans-serif;
+    font-family: "Bree", serif;
 }
 
 .exemplo-cartao p {
