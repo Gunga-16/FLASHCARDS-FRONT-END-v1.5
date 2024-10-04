@@ -54,8 +54,7 @@ function carregarFlashcards() {
 carregarFlashcards();
 
 
-// Armazenando a origem do botão copiar
-const botaoCopiar = document.getElementById('execCopy').addEventListener('click', execCopy);
+document.getElementById('execCopy').addEventListener('click', execCopy);
 
 // Função de copiar
 function execCopy() {
