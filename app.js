@@ -22,7 +22,7 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
                         <code id="codigo-exemplo">
                             ${exemplo}
                         </code>
-                        <button class="botao-copiar" onclick="copyToClickBoard()">Copiar</button>
+                        <button class="botao-copiar" onclick="copyToClickBoard(event)">Copiar</button>
                     </p>
                 </div>
             </div>
