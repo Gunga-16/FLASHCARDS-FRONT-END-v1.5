@@ -125,3 +125,7 @@ footer {
     border-radius: 10px;
     border: 0;
 }
+
+.botao-copiar:hover {
+    background-color: blue;
+}
