@@ -22,7 +22,7 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
                         <code id="codigo-exemplo">
                             ${exemplo}
                         </code>
-                        <button class="botao-copiar" onclick="copyToClickBoard(event)">Copiar</button>
+                        <button class="botao-copiar" onclick="copyToClickBoard()">Copiar</button>
                     </p>
                 </div>
             </div>
@@ -59,8 +59,24 @@ function carregarFlashcards() {
 carregarFlashcards();
 
 // Função de copiar
-function copyToClickBoard(event) {
+function copyToClickBoard() {
     event.stopPropagation(); // Impede que o clique no botão "copiar" faça o cartão virar
     var content = document.getElementById('codigo-exemplo').innerHTML;
     navigator.clipboard.writeText(content);
+
+    // Exibe a mensagem de confirmação
+    mostrarMensagem('Código copiado para a área de transferência!');
+}
+
+// Função para exibir uma mensagem temporária
+function mostrarMensagem(mensagem) {
+    let mensagemDiv = document.createElement('div');
+    mensagemDiv.className = 'mensagem-copiado';
+    mensagemDiv.textContent = mensagem;
+    document.body.appendChild(mensagemDiv);
+
+    // Remove a mensagem após 3 segundos
+    setTimeout(() => {
+        document.body.removeChild(mensagemDiv);
+    }, 3000);
 }
