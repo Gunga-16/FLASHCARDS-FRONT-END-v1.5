@@ -22,7 +22,7 @@ function criaCartao(categoria, subcategoria, pergunta, resposta, exemplo) {
                         <code id="codigo-exemplo">
                             ${exemplo}
                         </code>
-                        <button class="botao-copiar" onclick="copyToClickBoard()">Copiar</button>
+                        <button class="botao-copiar" onclick="copyToClickBoard(event)">Copiar</button>
                     </p>
                 </div>
             </div>
@@ -59,7 +59,7 @@ function carregarFlashcards() {
 carregarFlashcards();
 
 // Função de copiar
-function copyToClickBoard() {
+function copyToClickBoard(event) {
     event.stopPropagation(); // Impede que o clique no botão "copiar" faça o cartão virar
     var content = document.getElementById('codigo-exemplo').innerHTML;
     navigator.clipboard.writeText(content);
