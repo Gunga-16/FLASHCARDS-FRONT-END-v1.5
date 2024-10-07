@@ -59,9 +59,8 @@ function carregarFlashcards() {
 carregarFlashcards();
 
 // Função de copiar
-function copyToClickBoard(){
+function copyToClickBoard(event) {
+    event.stopPropagation(); // Impede que o clique no botão "copiar" faça o cartão virar
     var content = document.getElementById('codigo-exemplo').innerHTML;
-
     navigator.clipboard.writeText(content);
 }
-
