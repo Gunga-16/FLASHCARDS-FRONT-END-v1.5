@@ -65,18 +65,6 @@ function copyToClickBoard(event) {
     navigator.clipboard.writeText(content);
 
     // Exibe a mensagem de confirmação
-    mostrarMensagem('Código copiado para a área de transferência!');
+    alert('Código copiado para a área de transferência!');
 }
 
-// Função para exibir uma mensagem temporária
-function mostrarMensagem(mensagem) {
-    let mensagemDiv = document.createElement('div');
-    mensagemDiv.className = 'mensagem-copiado';
-    mensagemDiv.textContent = mensagem;
-    document.body.appendChild(mensagemDiv);
-
-    // Remove a mensagem após 3 segundos
-    setTimeout(() => {
-        document.body.removeChild(mensagemDiv);
-    }, 3000);
-}
